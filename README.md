@@ -17,14 +17,15 @@
 
 birdbasket
 │
-├── backend
+├──src
+| |── config
 │ ├── models
 │ ├── routes
-│ ├── controllers
 │ ├── middleware
 │ └── server.js
 │
-├── frontend
+│
+├── src
 │ ├── components
 │ ├── pages
 │ ├── services
