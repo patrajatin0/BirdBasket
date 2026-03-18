@@ -8,6 +8,7 @@ import connectDB from "./config/database.js"
 import cors from "cors"
 import cookiesParser from "cookie-parser"
 import userAuthRouter from "./routes/userAuthentication.js"
+import birdRoutes from "./routes/birdRoutes.js"
 
 
 
@@ -19,7 +20,7 @@ server.use(cors({ origin: "http://localhost:5173", credentials: true }))
 server.use(cookiesParser())
 
 
-server.use("/api", userAuthRouter)
+server.use("/api", userAuthRouter, birdRoutes)
 
 
 connectDB()
